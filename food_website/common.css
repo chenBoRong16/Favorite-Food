@@ -1,0 +1,278 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #FFF9EE;
+    transition: background-color 0.2s;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFD1BB;
+    align-items: center;
+    border-bottom: #d48763 solid 5px;
+}
+
+nav h1 {
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-weight: bold;
+}
+
+nav h1:hover {
+    background-color: #fedac9;
+    box-shadow: #ff884c 10px 10px;
+    border: none;
+    border-radius: 10px;
+    transform: scale(1.05); /*放大效果*/
+    transition: background-color 0.2s, transform 0.4s; /* 单独设置属性的过渡时间 */
+}
+
+#title{
+    cursor: pointer;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2px;
+}
+
+nav div p{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;/*comic sans手寫字體給人輕鬆的感覺*/
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    
+    transition: background-color 0.2s, transform 0.4s; /* 单独设置属性的过渡时间 */
+
+    display: flex; /* 使用 flex 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+
+nav div p:hover {
+    background-color: #fedac9;
+    border: none;
+    border-radius: 10px;
+    box-shadow: #ff884c 8px 8px;
+    
+    transform: scale(1.1); /*放大效果*/
+    cursor: pointer;
+}
+
+.photo-caro {
+    background-color: #fff;
+    border: #c76233 solid 4px;
+    border-radius: 10px;
+    
+}
+
+
+.photo-caro img {
+    border-radius: 50px;
+    width: auto;
+    transition: background-color 0.2s, transform 0.4s; /* 单独设置属性的过渡时间 */
+
+}
+
+.photo-caro img:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+
+}
+
+button#modeButton{
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    transition: opacity 0.2s,transform 0.4s;
+    border: #c76233 solid 3px;
+    border-radius: 10px;
+    z-index: 999;
+    cursor: pointer;
+    
+}
+
+button#modeButton.floating {
+    animation: float 0.2s ease-in-out; /* 添加浮动动画 */
+}
+
+.overlay {
+    display: none; /* 初始隐藏 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* 半透明背景 */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    opacity: 0;
+    transition: opacity 0.2s ease-in; /* 进入时 0.4s 过渡 */
+}
+
+.overlay.show {
+    display: flex;
+    opacity: 1; /* 淡入效果 */
+}
+
+.overlay.hide {
+    opacity: 0; /* 淡出效果 */
+    transition: opacity 0.2s ease-out; /* 退出时 0.2s 过渡 */
+}
+
+.overlay img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.content {
+    margin: 50px auto;
+    width: 90%;
+    background-color: #FFF;
+    border-radius: 10px;
+    border: 3px solid #c76233;
+    box-shadow: #cc612f 2px 2px;
+    display: flex;
+    align-items: center;
+}
+
+.content .imgbox{
+
+}
+
+.content img {
+    border-radius: 50px;
+    transition: background-color 0.2s, transform 0.4s; /* 单独设置属性的过渡时间 */
+
+    cursor: pointer;
+}
+
+.content img:hover {
+
+}
+
+.content h3{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.content span {
+    background-color: #d2af9f;
+    width: 2px;
+    height: 390px;
+    margin: auto 2px;
+}
+
+.content-text {
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer{
+    background-color: #FFD1BB;
+    font-family: 'Playfair Display', serif;
+}
+
+.floating {
+    animation: float 1s ease-in-out; /* 控制动画的平滑效果 */
+}
+
+@keyframes float {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02); /* 缩放到 1.1 倍 */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+/* Common Dark Mode Styles */
+body.dark-mode {
+    background-color: #3b3b3b; /* Dark background */
+    color: #EAEAEA; /* Light text color */
+}
+
+nav.dark-mode {
+    background-color: #000000; /* Dark nav background */
+    border-bottom: #333 solid 5px;
+}
+
+nav.dark-mode h1 {
+    color: #EAEAEA; /* Light text for h1 */
+}
+
+nav.dark-mode h1:hover {
+    background-color: #3d3c3c;
+    box-shadow: #6c6b6b 10px 10px;
+}
+
+nav.dark-mode div p {
+    
+}
+
+nav.dark-mode div p:hover {
+    background-color: #3d3c3c;
+    box-shadow: #6c6b6b 8px 8px;
+}
+
+.photo-caro.dark-mode {
+    background-color: #1f1f1f; /* Dark background for content sections */
+    border: 4px solid #d0c9c6;
+
+}
+
+/* Adjust image hover in dark mode */
+.photo-caro.dark-mode img:hover {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Light shadow on hover */
+}
+
+button#modeButton.darkmode{
+    border: #d0c9c6 solid 3px;
+    background-color: #000000;
+    color: #EAEAEA; 
+    border-radius: 10px;
+}
+
+.overlay.dark-mode {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker overlay */
+}
+
+footer.dark-mode {
+    background-color: #000000;
+    color: #EAEAEA; /* Light text for footer */
+}
+
+.content.dark-mode {
+    border: 3px solid #d0c0b8;
+    box-shadow: #c0b9b6 2px 2px;
+    background-color: #1f1f1f; /* Dark background for content sections */
+    color: #EAEAEA; /* Light text color */
+}
+
+.content.dark-mode span {
+    background-color: gainsboro;
+}
+
+.content .content-text.dark-mode {
+    color: #EAEAEA; /* Dark mode content text */
+}

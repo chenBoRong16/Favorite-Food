@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Fav Foodie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href='common.css'>
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href='pc_style.css'>
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="mobile_style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <h1 id="title">Fav Foodie</h1>
+        <div>
+            <p data-target="#content1" class="scroll-link">Vegetable Soup</p>
+            <p data-target="#content2" class="scroll-link">Indulgence</p>
+            <p data-target="#content3" class="scroll-link">Pork Knuckle</p>
+            <p data-target="#content4" class="scroll-link">Curry Udon</p>
+            <p data-target="#content5" class="scroll-link">Fried Chicken</p>
+        </div>
+
+    </nav>
+
+    <div class="photo-caro">
+        <img src="images/Vegetable Soup.jpg" data-anchor="#content1">
+        <img src="images/Indulgence.jpg" data-anchor="#content2">
+        <img src="images/pork knuckle.jpg" data-anchor="#content3">
+        <img src="images/Curry Udon.jpg" data-anchor="#content4">
+        <img src="images/fried chicken.jpg" data-anchor="#content5">
+    </div>
+
+    <button id="modeButton" onclick="toggleMode()">Dark Mode</button> 
+
+    <div id="overlay" class="overlay">
+        <span class="close-btn">&times;</span>
+        <img id="overlay-img" src="" alt="Enlarged Image">
+    </div>
+
+    <div class='content' id="content1">
+        <div class="imgBox">
+            <img src="images/Vegetable Soup.jpg" >
+        </div>
+        <span></span>
+        <div>
+            <h3>Welcome to Our Deliciously Affordable Vegetable Soup!</h3>
+            <p class="content-text">
+                Dive into a bowl of our refreshingly light and budget-friendly vegetable soup, perfect for any day of
+                the
+                week. This comforting soup is brimming with a variety of vibrant vegetables that blend together to
+                create a
+                nourishing, flavorful experience.
+                Inside this bowl, you'll find an assortment of fresh, seasonal veggies like crisp cabbage, leafy greens,
+                and
+                earthy mushrooms. Each ingredient is carefully selected and simmered to perfection, infusing the broth
+                with
+                natural, delicate flavors. The result? A clear and savory soup that’s both soothing and satisfying,
+                offering
+                a healthy, guilt-free option that warms your soul with every spoonful.
+                Ideal for a quick meal or a comforting starter, this soup is as versatile as it is delicious. Whether
+                you’re
+                seeking a simple lunch or a nutritious accompaniment to a hearty dinner, the vegetable soup delivers
+                taste
+                and freshness without breaking the bank. Give it a try and enjoy the true essence of wholesome,
+                plant-based
+                comfort!
+            </p>
+        </div>
+    </div>
+    <div class='content' id="content2">
+        <div class="imgBox">
+            <img src="images/Indulgence.jpg">
+        </div>
+        <span></span>
+        <div>
+            <h3>Vending Machine Ramen: A Delicious 24/7 Indulgence</h3>
+            <p class="content-text">
+                If you’re ever craving a quick yet satisfying meal, our 24-hour vending machine ramen is here to save
+                the day—or night! Ready in just one minute, this bowl of ramen is perfect for when hunger strikes,
+                delivering a comforting, flavorful experience that doesn’t compromise on quality.
+                What sets this ramen apart is the generous serving of five tender slices of chashu pork. Each piece is
+                perfectly seasoned and melts in your mouth, adding a burst of umami to every bite. The rich, savory
+                broth complements the chewy noodles, creating a well-balanced and hearty dish. To round it off, the
+                ramen comes with a mix of fresh vegetables and toppings, providing a burst of color and extra nutrition.
+                Ideal as a midnight snack or a quick meal on the go, this vending machine ramen is a testament to how
+                convenience and flavor can coexist. The delicious chashu and flavorful ingredients make every bowl a
+                memorable treat. Give it a try, and you’ll understand why this instant ramen is a favorite choice for
+                food lovers, day or night!
+            </p>
+        </div>
+    </div>
+    <div class='content' id="content3">
+        <div class="imgBox">
+            <img src="images/pork knuckle.jpg">
+        </div>
+        <span></span>
+        <div>
+            <h3>Delightfully Satisfying Pork Knuckle.</h3>
+            <p class="content-text">
+                Next, we bring you a classic favorite: the tender, flavorful, and delightfully satisfying pork knuckle.
+                This dish, with its rich, savory sauce and fall-off-the-bone meat, is an unforgettable treat that
+                combines comfort with indulgence.
+                Pork knuckle is a well-loved delicacy in various cuisines, from European to Asian kitchens, each adding
+                its own twist to enhance the flavors. Our version captures the essence of this dish, garnished with
+                fresh, vibrant vegetables like shredded scallions and carrots for a pop of color and a bit of crunch.
+                Served hot and packed with bold, slow-cooked flavors, this pork knuckle is a must-try for anyone who
+                loves hearty, soul-warming food.
+            </p>
+        </div>
+    </div>
+    <div class='content' id="content4">
+        <div class="imgBox">
+            <img src="images/Curry Udon.jpg">
+        </div>
+        <span></span>
+        <div>
+            <h3>Curry Udon: A Heavenly Bowl of Comfort</h3>
+            <p class="content-text">
+                Imagine sitting down to a steaming bowl of curry udon, where the aroma of rich, savory curry fills the
+                air and makes your mouth water in anticipation. As you take your first bite, the thick, chewy udon
+                noodles deliver the perfect texture, effortlessly soaking up the flavorful curry sauce. It’s like each
+                noodle has absorbed the curry’s essence, bringing you a delightful burst of warmth and spice.
+                The curry itself is silky and deeply seasoned, wrapping around the noodles and coating them in a way
+                that creates a perfect harmony of flavors. Every spoonful is comforting and satisfying, providing that
+                wonderful, hearty feeling of a well-rounded meal. To add even more depth, the dish features an
+                assortment of vibrant vegetables, giving each bite a fresh and wholesome crunch.
+                Enjoying this bowl of curry udon is an experience of pure comfort and joy. It’s the kind of meal that
+                warms your heart, fills you up, and leaves you with a smile, eager to savor each delicious bite until
+                the very end.
+            </p>
+        </div>
+    </div>
+    <div class='content' id="content5">
+        <div class="imgBox">
+            <img src="images/fried chicken.jpg">
+        </div>
+        <span></span>
+        <div>
+            <h3>The Most Favorite All Around The World—Fried Chicken!</h3>
+            <p class="content-text">
+                Welcome to my food blog! Today, we’re diving into a delicious treat that’s a
+                favorite all around the world—fried chicken! What makes this dish so irresistible? It’s all about the
+                crispy, golden coating and juicy, tender meat inside. Fried chicken has many variations, but each bite
+                promises a satisfying crunch and a burst of flavor.
+                Take a look at this tempting plate of seasoned fried chicken, with a light dusting of spices and a hint
+                of lime to add a tangy kick. Perfectly cooked, each piece is crunchy on the outside and tender on the
+                inside. Whether you enjoy it as a snack, a main course, or part of a festive spread, fried chicken never
+                fails to deliver on flavor and comfort.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.w3schools.com/w3css/defaulT.asp">
+            Powered by w3.css
+        </a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+html {
+    
+}
+
+body {
+    font-size: 16px;
+}
+
+nav {
+    width: 100%;
+    top: 0;
+    height: 85px;
+    z-index: 999;
+}
+
+nav h1 {
+    margin-left: 10px;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+nav h1:hover {
+    
+}
+
+nav div {
+    width: 80%;
+    margin-right: 20px;
+}
+
+nav div p {
+    padding: 5px; 
+    height: 65px;
+    align-items: center; /* 垂直居中 */
+    font-size: 15px;
+}
+
+nav div p:hover {
+    
+}
+
+.photo-caro {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    height: 450px;
+}
+
+.photo-caro img {
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 450px;
+    opacity: 0;
+    animation: fade 25s infinite;
+    pointer-events: none;
+
+    height: 85%;
+    max-width: 85%;
+    width: auto;
+}
+
+.photo-caro img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.photo-caro img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.photo-caro img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.photo-caro img:nth-child(4) {
+    animation-delay: 15s;
+}
+
+.photo-caro img:nth-child(5) {
+    animation-delay: 20s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#modeButton{
+    top: 95px;
+    left: 5px;
+}
+
+.overlay {
+
+}
+
+.overlay img {
+    max-height: 90%;
+    height: auto;
+    width: 70%;
+    
+}
+
+.close-btn {
+    
+}
+
+.content {
+    
+}
+
+div.imgBox{
+    height: 500px;
+}
+
+.content img {
+    max-height: 90%;
+    height: auto;
+    width: 90%;
+}
+
+.content img:hover {
+    transform: scale(1.1);
+}
+
+.content div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h3 {
+    text-align: center;
+    margin: 0 30px;
+}
+
+.content span {
+    
+}
+
+.content-text {
+    margin: 25px;
+    height: 300px;
+    overflow: scroll;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    margin: auto;
+    font-size: 20px;
+}

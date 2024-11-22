@@ -1,0 +1,189 @@
+html {
+    
+}
+
+body {
+    font-size: 18px;
+}
+
+nav {
+    width: 100%;
+    top: 0;
+    height: 120px;
+    z-index: 999;
+}
+
+nav h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 50px;         
+}
+
+nav h1:hover {
+    
+}
+
+nav div {
+    width: 60%;
+    margin-right: 20px;
+}
+
+nav div p {
+    padding: 10px;
+    height: 90px; 
+    font-size: 24px;
+    margin: 5px;
+}
+
+nav div p:hover {
+    
+}
+
+.photo-caro {
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    height: 550px;
+}
+
+.photo-caro img {
+    cursor: pointer;
+    /* 指示圖片可以被點擊 */
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 450px;
+    opacity: 0;
+    animation: fade 25s infinite;
+    pointer-events: none;
+    width: 85%;
+    max-height: 85%;
+    height: auto;
+}
+
+.photo-caro img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.photo-caro img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.photo-caro img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.photo-caro img:nth-child(4) {
+    animation-delay: 15s;
+}
+
+.photo-caro img:nth-child(5) {
+    animation-delay: 20s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#modeButton{
+    top: 130px;
+    left: 5px;
+}
+
+.overlay {
+
+}
+
+.overlay img {
+    max-width: 80%;
+    height: 90%;
+    width: auto;
+
+}
+
+.close-btn {
+    
+}
+
+.content {
+    
+}
+
+.content .imgbox{
+
+}
+
+.content img {
+    height: 500px;
+    max-width: 80%;
+    width: auto;
+}
+
+.content img:hover {
+    transform: scale(1.1);
+}
+
+.content div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h3{
+
+}
+
+.content span {
+    
+}
+
+.content-text {
+    margin: 25px;
+    width: 75%;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    margin: auto;
+    font-size: 20px;
+}
